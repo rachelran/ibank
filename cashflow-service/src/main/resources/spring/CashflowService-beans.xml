@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-lazy-init="true" xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <bean class="com.sap.sme.common.spring.ApplicationContextHolder" lazy-init="false" />
+
+    <!-- Override default PersistenceAnnotationBeanPostProcessor, specified default persistenceUnit name to solve multiple EntityManagerFactory issue. -->
+
+    <bean id="mysqlDataSource" class="com.sap.sme.ilab.cashflow.datasource.MysqlDataSource" primary="true"/>
+    <bean id="mssqlDataSource" class="com.sap.sme.ilab.cashflow.datasource.MssqlDataSource"/>
+
+    <bean id="mysqlEntityManagerFactory" autowire-candidate="false" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
+                <property name="databasePlatform" value="MySQL"/>
+            </bean>
+        </property>
+        <property name="packagesToScan">
+            <list>
+                <value>com.sap.sme.ilab.cashflow.domain</value>
+            </list>
+        </property>
+        <property name="jpaPropertyMap">
+            <map>
+                <entry key="javax.persistence.sharedCache.mode" value="NONE" /> <!-- Disable JPA L2 cache. -->
+                <entry key="eclipselink.cache.shared.default" value="false" />  <!-- Disable JPA L2 cache. -->
+                <entry key="eclipselink.target-server" value="None" />
+                <entry key="eclipselink.weaving" value="false" />
+                <entry key="eclipselink.validation-only" value="true" />
+                <entry key="eclipselink.jdbc.batch-writing" value="jdbc" />
+                <entry key="eclipselink.jdbc.batch-writing.size" value="1000" />
+                <entry key="eclipselink.logging.level" value="FINE" />
+                <entry key="eclipselink.logging.level.sql" value="FINE" />
+                <entry key="eclipselink.logging.parameters" value="true" />
+            </map>
+        </property>
+        <property name="persistenceUnitName" value="cashflow-mysql"/>
+        <property name="dataSource" ref="mysqlDataSource"/>
+    </bean>
+
+    <bean id="mssqlEntityManagerFactory" autowire-candidate="false" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
+                <property name="databasePlatform" value="SQLSERVER"/>
+            </bean>
+        </property>
+        <property name="packagesToScan">
+            <list>
+                <value>com.sap.sme.ilab.cashflow.domain</value>
+            </list>
+        </property>
+        <property name="jpaPropertyMap">
+            <map>
+                <entry key="javax.persistence.sharedCache.mode" value="NONE" /> <!-- Disable JPA L2 cache. -->
+                <entry key="eclipselink.cache.shared.default" value="false" />  <!-- Disable JPA L2 cache. -->
+                <entry key="eclipselink.target-server" value="None" />
+                <entry key="eclipselink.weaving" value="false" />
+                <entry key="eclipselink.validation-only" value="true" />
+                <entry key="eclipselink.jdbc.batch-writing" value="jdbc" />
+                <entry key="eclipselink.jdbc.batch-writing.size" value="1000" />
+                <entry key="eclipselink.logging.level" value="FINE" />
+                <entry key="eclipselink.logging.level.sql" value="FINE" />
+                <entry key="eclipselink.logging.parameters" value="true" />
+            </map>
+        </property>
+        <property name="persistenceUnitName" value="cashflow-mssql"/>
+        <property name="dataSource" ref="mssqlDataSource"/>
+    </bean>
+
+    <bean id="mysqlEntityManager" autowire-candidate="false" class="org.springframework.orm.jpa.support.SharedEntityManagerBean" lazy-init="true">
+        <property name="entityManagerFactory" ref="mysqlEntityManagerFactory"/>
+    </bean>
+
+    <bean id="mssqlEntityManager" name="mssqlEntityManager"  class="org.springframework.orm.jpa.support.SharedEntityManagerBean" lazy-init="true">
+        <property name="entityManagerFactory" ref="mssqlEntityManagerFactory"/>
+    </bean>
+
+    <bean id="mysqlDataSourceService" class="com.sap.sme.ilab.cashflow.datasource.service.impl.MysqlDataSourceServiceImpl">
+    </bean>
+
+    <bean id="mssqlDataSourceService" class="com.sap.sme.ilab.cashflow.datasource.service.impl.MssqlDataSourceServiceImpl">
+    </bean>
+
+	<bean id="myProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+	  <property name="locations">
+	    <list>
+	      <value>classpath*:/resources/*.connection.properties</value>
+	    </list>
+	  </property>
+	</bean>
+
+    <bean id="mysqlTxManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="mysqlEntityManagerFactory"/>
+        <property name="dataSource" ref="mysqlDataSource"/>
+    </bean>
+
+    <tx:advice id="mysqlTxAdvice" transaction-manager="mysqlTxManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" isolation="READ_COMMITTED" rollback-for="Exception"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="mysqlTransactionOperation"
+                      expression="execution(* com.sap.sme.ilab.cashflow.service..*.*(..))"/>
+
+        <aop:advisor advice-ref="mysqlTxAdvice" pointcut-ref="mysqlTransactionOperation"/>
+    </aop:config>
+
+</beans>

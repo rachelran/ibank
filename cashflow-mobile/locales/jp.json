@@ -1,0 +1,227 @@
+{
+  "login": {
+    "email_input": "Emailアドレス",
+    "password_input": "パスワード",
+    "login_btn": "ログイン",
+    "create_account_txt": "アカウントを作成"
+  },
+  "setup": {
+    "name": "名前",
+    "signUp_btn": "サインアップ",
+    "have_account_txt": "すでにアカウントを持っている"
+  },
+  "copyright_txt": "Copyright(c) 2018 SAP SE. All rights reserved.",
+  "product_name": "SAP Business One Lite",
+  "welcome": {
+    "login_txt": "ログイン",
+    "cashflow_title": "キャッシュフローを\n分かりやすく",
+    "cashflow_msg": "企業のあらゆる動きを管理および監視",
+    "seamless_title": "シームレス",
+    "seamless_msg": "取引先、銀行、インボックスで日々の業務を分かりやすく",
+    "next_title": "さあ、\n次は？",
+    "next_msg": "あなたのビジネスが、次のインテリジェントなアクションを教えてくれる",
+    "start_btn": "はじめよう"
+  },
+  "home": {
+    "title": "ホーム",
+    "todo_txt": "予定作業",
+    "payment_card_title": "転記予定",
+    "time_now": "今すぐ",
+    "time_min_ago": "{{min}} 分前",
+    "time_mins_ago": "{{min}} 分前",
+    "time_hour_ago": "{{hour}} 時間前",
+    "time_hours_ago": "{{hour}} 時間前",
+    "time_day_ago": "{{day}} 日前",
+    "time_days_ago": "{{day}} 日前",
+    "moneyOut_title": "支出",
+    "moneyIn_title": "所得",
+    "cards_title": "智慧卡片"
+  },
+  "menu": {
+    "home": "ホーム",
+    "bps": "取引先",
+    "payments": "入出金",
+    "products": "商品",
+    "reports": "レポート",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "todo": "予定作業",
+    "version": "バージョン",
+    "expense": "Expense",
+    "account": "口座"
+  },
+  "bp": {
+    "list_customer_tab": "得意先",
+    "list_vendors_tab": "仕入先"
+  },
+  "revenueDetail": {
+    "title": "入金"
+  },
+  "payment": {
+    "list": {
+      "filter": {
+        "all": "すべて",
+        "incoming": "入金",
+        "outgoing": "出金"
+      },
+      "create_title": "入出金を作成",
+      "cancel_btn": "キャンセル",
+      "header_in_txt": "入",
+      "header_out_txt": "出"
+    },
+    "detail": {
+      "in_title": "入金詳細",
+      "out_title": "出金詳細",
+      "from_txt": "開始",
+      "to_txt": "終了",
+      "date_txt": "日付",
+      "amount_txt": "金額",
+      "reference_txt": "参照",
+      "product_title": "商品",
+      "product_column": "商品",
+      "amount_column": "金額",
+      "expense_type_title": "費用タイプ",
+      "post_btn": "転記",
+      "post_success_msg": "転記完了",
+      "post_error_msg": "エラー {{msg}}"
+    },
+    "status": {
+      "draft": "未転記",
+      "posted": "転記済"
+    }
+  },
+  "expense": {
+    "detail": {
+      "title": "Expense Claim",
+      "amount_label": "Purchase Amount",
+      "taxRate_label": "Tax Rate",
+      "taxAmount_label": "Tax Amount",
+      "expense_category_label": "Expense Category",
+      "spent_on_label": "Spent On",
+      "spent_by_label": "Spent By",
+      "description_label": "Description",
+      "import_nav_btn": "Import",
+      "delete_btn": "Delete",
+      "delete_success_msg": "Deleted Successfully"
+    }
+  },
+  "report": {
+    "cash_trend": {
+      "title": "キャッシュトレンド",
+      "legend": {
+        "received": "入金済",
+        "paid": "出金済"
+      }
+    },
+    "volume": {
+      "title": "取引量",
+      "legend": {
+        "number": "入金回数",
+        "money": "入金額"
+      },
+      "filter": {
+        "customer": "得意先毎",
+        "product": "商品毎"
+      },
+      "comparison_title": "比較"
+    },
+    "top5Cus": {
+      "title": "トップ 5 得意先"
+    },
+    "top5Exp": {
+      "title": "トップ 5 仕入先"
+    },
+    "top5Seller": {
+      "title": "トップ 5 売れ筋"
+    },
+    "payments_txt": "入出金",
+    "expense_trend": {
+      "title": "Expense Trend"
+    },
+    "revenue_gross": {
+        "title": "Revenue & Gross Profit",
+        "legend": {
+          "revenue": "Revenue",
+          "gross": "Gross Profit"
+        }
+    }
+  },
+  "month": {
+    "jan": {
+      "full": "1月",
+      "short": "1月"
+    },
+    "feb": {
+      "full": "2月",
+      "short": "2月"
+    },
+    "mar": {
+      "full": "3月",
+      "short": "3月"
+    },
+    "apr": {
+      "full": "4月",
+      "short": "4月"
+    },
+    "may": {
+      "full": "5月",
+      "short": "5月"
+    },
+    "jun": {
+      "full": "6月",
+      "short": "6月"
+    },
+    "jul": {
+      "full": "7月",
+      "short": "7月"
+    },
+    "aug": {
+      "full": "8月",
+      "short": "8月"
+    },
+    "sep": {
+      "full": "9月",
+      "short": "9月"
+    },
+    "oct": {
+      "full": "10月",
+      "short": "10月"
+    },
+    "nov": {
+      "full": "11月",
+      "short": "11月"
+    },
+    "dec": {
+      "full": "12月",
+      "short": "12月"
+    }
+  },
+  "timePeriod": {
+    "this_month": "今月",
+    "past_3_month": "過去 3 カ月",
+    "past_6_month": "過去 6 カ月",
+    "past_12_month": "過去 12 カ月",
+    "year": "年 {{year}}",
+    "till_now": "現在まで"
+  },
+  "confirm_btn": "確定",
+  "cancel_btn": "キャンセル",
+  "ok_btn": "Ok",
+  "setting": {
+    "language_txt": "言語",
+    "english": "English",
+    "japanese": "日本語",
+    "chinese": "中文"
+  },
+  "update": {
+    "title": "新しいバージョンが利用可能",
+    "msg": "今すぐ最新バージョンをダウンロードできます。",
+    "download_btn": "ダウンロード"
+  },
+  "form": {
+    "attachment_title": "Attachment",
+    "attachment_add_btn": "Add"
+  },
+  "take_photo_btn": "Take Photo",
+  "choose_from_library_btn": "Choose from Library"
+}

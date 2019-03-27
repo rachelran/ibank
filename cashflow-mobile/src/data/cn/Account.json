@@ -1,0 +1,66 @@
+[{
+    "id": "1",
+    "accountName": "现金",
+    "accountNumber": "淮海路旗舰店",
+    "amount": 4000,
+    "accountType": {
+        "id": 1
+    },
+    "currency": {
+        "id": 1
+    }
+}, {
+    "id": "2",
+    "accountName": "招商银行",
+    "accountNumber": "55502341111111",
+    "amount": 2000,
+    "accountType": {
+        "id": 2
+    },
+    "currency": {
+        "id": 1
+    },
+    "bank": {
+        "id": 1
+    }
+},
+{
+    "id": "3",
+    "accountName": "支付宝",
+    "accountNumber": "cashflow@sap.com",
+    "amount": 3000,
+    "accountType": {
+        "id": 3
+    },
+    "currency": {
+        "id": 1
+    }
+},
+{
+    "id": "4",
+    "accountName": "农业银行",
+    "accountNumber": "123456788",
+    "amount": 4000,
+    "accountType": {
+        "id": 2
+    },
+    "currency": {
+        "id": 1
+    },
+    "bank": {
+        "id": 2
+    }
+},
+{
+    "id": "5",
+    "accountName": "微信支付",
+    "accountNumber": "334554",
+    "amount": 5000,
+    "accountType": {
+        "id": 4
+    },
+    "currency": {
+        "id": 1
+    }
+}
+]

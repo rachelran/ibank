@@ -1,0 +1,51 @@
+[{
+    "id": "1",
+    "code": "IN-ISS",
+    "name": "门店销售",
+    "type": "IN"
+}, {
+    "id": "2",
+    "code": "IN-OS",
+    "name": "线上销售",
+    "type": "IN"
+}, {
+    "id": "3",
+    "code": "IN-ASS",
+    "name": "售后",
+    "type": "IN"
+}, {
+    "id": "4",
+    "code": "IN-OTH",
+    "name": "其他",
+    "type": "IN"
+}, {
+    "id": "5",
+    "code": "OUT-COGS",
+    "name": "物料成本",
+    "type": "OUT"
+}, {
+    "id": "6",
+    "code": "OUT-PR",
+    "name": "工资",
+    "type": "OUT"
+}, {
+    "id": "7",
+    "code": "OUT-RENT",
+    "name": "租金",
+    "type": "OUT"
+}, {
+    "id": "8",
+    "code": "OUT-TE",
+    "name": "团队建设",
+    "type": "OUT"
+}, {
+    "id": "9",
+    "code": "OUT-OTH",
+    "name": "其他",
+    "type": "OUT"
+},{
+    "id": "10",
+    "code": "IN-INB",
+    "name": "期初余额",
+    "type": "IN"
+}]

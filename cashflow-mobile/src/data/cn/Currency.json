@@ -1,0 +1,11 @@
+[{
+    "id": "1",
+    "code": "CNY",
+    "name": "人民币",
+    "symbol": "¥"
+}, {
+    "id": "2",
+    "code": "USD",
+    "name": "美元",
+    "symbol": "$"
+}]

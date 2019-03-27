@@ -1,0 +1,66 @@
+[{
+    "id": "1",
+    "accountName": "Cash",
+    "accountNumber": "huaihailuqijiandian",
+    "amount": 400,
+    "accountType": {
+        "id": 1
+    },
+    "currency": {
+        "id": 1
+    }
+}, {
+    "id": "2",
+    "accountName": "CMB",
+    "accountNumber": "55502341111111",
+    "amount": 200,
+    "accountType": {
+        "id": 2
+    },
+    "currency": {
+        "id": 1
+    },
+    "bank": {
+        "id": 1
+    }
+},
+{
+    "id": "3",
+    "accountName": "Alipay",
+    "accountNumber": "cashflow@sap.com",
+    "amount": 300,
+    "accountType": {
+        "id": 3
+    },
+    "currency": {
+        "id": 1
+    }
+},
+{
+    "id": "4",
+    "accountName": "ABC",
+    "accountNumber": "123456788",
+    "amount": 400,
+    "accountType": {
+        "id": 2
+    },
+    "currency": {
+        "id": 1
+    },
+    "bank": {
+        "id": 2
+    }
+},
+{
+    "id": "5",
+    "accountName": "Wepay",
+    "accountNumber": "334554",
+    "amount": 500,
+    "accountType": {
+        "id": 4
+    },
+    "currency": {
+        "id": 1
+    }
+}
+]

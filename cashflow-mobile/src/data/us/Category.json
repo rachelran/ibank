@@ -1,0 +1,51 @@
+[{
+    "id": "1",
+    "code": "IN-ISS",
+    "name": "In Store Sale",
+    "type": "IN"
+}, {
+    "id": "2",
+    "code": "IN-OS",
+    "name": "Online Sale",
+    "type": "IN"
+}, {
+    "id": "3",
+    "code": "IN-ASS",
+    "name": "After Sale Service",
+    "type": "IN"
+}, {
+    "id": "4",
+    "code": "IN-OTH",
+    "name": "Others",
+    "type": "IN"
+}, {
+    "id": "5",
+    "code": "OUT-COGS",
+    "name": "COGS",
+    "type": "OUT"
+}, {
+    "id": "6",
+    "code": "OUT-PR",
+    "name": "Payroll",
+    "type": "OUT"
+}, {
+    "id": "7",
+    "code": "OUT-RENT",
+    "name": "Rent",
+    "type": "OUT"
+}, {
+    "id": "8",
+    "code": "OUT-TE",
+    "name": "Travel & Entertainment",
+    "type": "OUT"
+}, {
+    "id": "9",
+    "code": "OUT-OTH",
+    "name": "Others",
+    "type": "OUT"
+}, {
+    "id": "10",
+    "code": "IN-INB",
+    "name": "Initial Balance",
+    "type": "IN"
+}]

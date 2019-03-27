@@ -1,0 +1,290 @@
+{
+  "login": {
+    "email_input": "Email Address",
+    "password_input": "Password",
+    "login_btn": "Login",
+    "create_account_txt": "Create Account"
+  },
+  "setup" : {
+      "name": "Name",
+      "signUp_btn": "Sign Up",
+      "have_account_txt": "Already have an account?"
+  },
+  "copyright_txt": "Copyright(c) 2018 SAP SE. All rights reserved.",
+  "product_name": "SAP Business One Lite",
+  "welcome": {
+      "login_txt": "Login",
+      "cashflow_title": "Cashflow\nDemystified",
+      "cashflow_msg": "Manage and monitor every aspect of your company life-blood.",
+      "seamless_title": "Seamless",
+      "seamless_msg": "Join the dots of daily activities with your business partners, bank and inbox.",
+      "next_title": "Ok,\nwhat's next?",
+      "next_msg": "Let your business tell you what it needs with intelligent actions.",
+      "start_btn": "LET’S START!"
+  },
+  "home": {
+      "title": "Home",
+      "todo_txt": "To Do",
+      "payment_card_title": "To Be Posted",
+      "time_now": "Right Now",
+      "time_min_ago": "{{min}} min ago",
+      "time_mins_ago": "{{min}} mins ago",
+      "time_hour_ago": "{{hour}} hour ago",
+      "time_hours_ago": "{{hour}} hours ago",
+      "time_day_ago": "{{day}} day ago",
+      "time_days_ago": "{{day}} days ago",
+      "cards_title": "Intelligent Cards",
+      "income_title": "Monthly-End Income Insight",
+      "benchmark_title": "Monthly-End Expense Benchmark",
+      "calendar_title": "11.11 Performance",
+      "create_payment_title": "Create Payment",
+      "payment_incoming": "Incoming Payments",
+      "payment_outcoming": "Outgoing Payments",
+      "payment_cancel_btn": "Cancel"
+  },
+  "moneydetail": {
+    "list": {
+        "money_in": "Money In",
+        "money_out": "Money Out"
+    },
+    "category": {
+        "IN-ISS": "In Store Sale",
+        "IN-OS": "Online Sale",
+        "IN-ASS": "After Sale Service",
+        "IN-OTH": "Others",
+        "OUT-COGS": "COGS",
+        "OUT-PR": "Payroll",
+        "OUT-RENT": "Rent",
+        "OUT-TE": "Travel & Entertainment",
+        "OUT-OTH": "Other"
+    }
+  },
+  "menu": {
+      "home": "Home",
+      "account": "Accounts",
+      "bps": "Business Partners",
+      "payments": "Payments",
+      "products": "Products",
+      "reports": "Reports",
+      "settings": "Settings",
+      "logout": "Logout",
+      "todo": "TODO!",
+      "version": "Version",
+      "expense": "Expense",
+      "data_analysis":"Data Analysis"
+  },
+  "bp": {
+      "list_customer_tab": "Customers",
+      "list_vendors_tab": "Vendors"
+  },
+  "revenueDetail": {
+      "title": "Money In"
+  },
+  "payment": {
+      "list": {
+          "filter": {
+              "all": "All",
+              "incoming": "Incoming Payments",
+              "outgoing": "Outgoing Payments"
+            },
+            "create_title": "Create Payment",
+            "cancel_btn": "Cancel",
+            "header_in_txt": "in",
+            "header_out_txt": "out"
+        },
+        "detail": {
+            "in_title": "Incoming Payment Details",
+            "out_title": "Outgoing Payment Details",
+            "from_txt": "From",
+            "to_txt": "To",
+            "date_txt": "Date",
+            "amount_txt": "Amount",
+            "category": "Category",
+            "reference_txt": "Reference",
+            "attachment_txt": "Attachment",
+            "product_title": "Product",
+            "product_column": "Product",
+            "amount_column": "Amount",
+            "expense_type_title": "Expense Type",
+            "save_btn": "Save",
+            "delete_btn": "Delete",
+            "delete_success_msg": "Delete Successfully",
+            "delete_error_msg": "Error:{{msg}}",
+            "save_success_msg": "Save Successfully",
+            "save_error_msg": "Error {{msg}}",
+            "delete_confirm_title": "Confirm Delete",
+            "delete_confirm_text": "Please confirm delete operation",
+            "delete_confirm_negative": "Cancel",
+            "delete_confirm_positive": "Delete"
+        },
+        "status": {
+            "draft": "To be Posted",
+            "posted": "Posted"
+        }
+  },
+  "expense": {
+    "detail": {
+      "title": "Expense Claim",
+      "amount_label": "Purchase Amount",
+      "taxRate_label": "Tax Rate",
+      "taxAmount_label": "Tax Amount",
+      "expense_category_label": "Expense Category",
+      "spent_on_label": "Spent On",
+      "spent_by_label": "Spent By",
+      "description_label": "Description",
+      "import_nav_btn": "Import",
+      "delete_btn": "Delete",
+      "delete_success_msg": "Deleted Successfully"
+    }
+  },
+  "report": {
+        "cash_trend": {
+            "title": "Cash Trend",
+            "monthLabel": "",
+            "legend": {
+                "received": "Received Money",
+                "paid": "Paid Money",
+                "balance": "Cash Balance"
+            }
+        },
+        "volume": {
+            "title": "Volume of Business",
+            "monthLabel": "",
+            "legend": {
+                "number": "No. of Incoming Payments",
+                "money": "Received Money"
+            },
+            "filter": {
+                "customer": "By customer",
+                "product": "By product"
+            },
+            "comparison_title": "Comparison"
+        },
+        "top5Cus": {
+            "title": "Top 5 Customers"
+        },
+        "top5Exp": {
+            "title": "Top 5 Expenditures"
+        },
+        "top5Seller": {
+            "title": "Top 5 Best Seller"
+        },
+        "payments_txt": "Payments",
+        "expense_trend": {
+            "title": "Expense Trend"
+        },
+        "revenue_gross": {
+            "title": "Revenue & Gross Profit",
+            "legend": {
+                "revenue": "Revenue",
+                "gross": "Gross Profit"
+            }
+        }
+  },
+  "month": {
+      "jan": {
+          "full": "January",
+          "short": "Jan"
+      },
+      "feb": {
+          "full": "February",
+          "short": "Feb"
+      },
+      "mar": {
+          "full": "March",
+          "short": "Mar"
+      },
+      "apr": {
+          "full": "April",
+          "short": "Apr"
+      },
+      "may": {
+          "full": "May",
+          "short": "May"
+      },
+      "jun": {
+          "full": "June",
+          "short": "Jun"
+      },
+      "jul": {
+          "full": "July",
+          "short": "Jul"
+      },
+      "aug": {
+          "full": "August",
+          "short": "Aug"
+      },
+      "sep": {
+          "full": "September",
+          "short": "Sep"
+      },
+      "oct": {
+          "full": "October",
+          "short": "Oct"
+      },
+      "nov": {
+          "full": "November",
+          "short": "Nov"
+      },
+      "dec": {
+          "full": "December",
+          "short": "Dec"
+      }
+  },
+  "timePeriod": {
+      "this_month": "This Month",
+      "past_3_month": "Past 3 Months",
+      "past_6_month": "Past 6 Months",
+      "past_12_month": "Past 12 Months",
+      "year": "Year {{year}}",
+      "till_now": "Till Now"
+  },
+  "confirm_btn": "Confirm",
+  "cancel_btn": "Cancel",
+  "ok_btn": "Ok",
+  "setting": {
+      "language_txt": "Language",
+      "english": "English",
+      "japanese": "日本語",
+      "chinese": "中文",
+      "currency_txt": "Currency"
+  },
+  "update": {
+    "title": "New Version Available",
+    "msg": "You can download the latest version now.",
+    "download_btn": "Download"
+  },
+  "form": {
+      "attachment_title": "Attachment",
+      "attachment_add_btn": "Add"
+  },
+  "take_photo_btn": "Take Photo",
+  "choose_from_library_btn": "Choose from Library",
+  "account": { 
+      "list": {
+          "title": "Accounts",
+          "bank":"Bank",
+          "alipay": "Alipay",
+          "cashinstore": "Cash in Store",
+          "wechatpay": "Wechat Pay"
+
+      },
+      "detail": {
+        "amount_label": "Amount",
+        "account_type":"Account Type",
+        "account_name":"Account Name",
+        "account_number":"Account Number",
+        "bank":"Bank",
+        "currency":"Currency",
+        "post_btn":"SAVE",
+        "post_success_msg":"save successfully",
+        "delete_error":"Unable to delete",
+        "delete_error_exist_text":"Account with existed payment record cannot be deleted",
+        "store_address":"Store address",
+        "alipay_account":"Alipay account",
+        "wechat_account":"Wechat number",
+        "save_error":"Account type should not be empty",
+        "title":"Create Account"
+      }
+    }
+}

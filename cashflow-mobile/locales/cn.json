@@ -1,0 +1,368 @@
+{
+  "login": {
+    "email_input": "邮箱",
+    "password_input": "密码",
+    "login_btn": "登陆",
+    "create_account_txt": "创建账户"
+  },
+  "setup" : {
+      "name": "用户名",
+      "signUp_btn": "注册",
+      "have_account_txt": "已经有账户?"
+  },
+  "copyright_txt": "Copyright(c) 2018 SAP SE. All rights reserved.",
+  "product_name": "SAP Business One Lite",
+  "welcome": {
+      "login_txt": "登陆",
+      "cashflow_title": "现金流\n大揭秘",
+      "cashflow_msg": "管理和监控公司生命血液的方方面面。",
+      "seamless_title": "浑然一体",
+      "seamless_msg": "让合作伙伴，银行以及邮箱一起加入你的日常工作。",
+      "next_title": "那么,\n接下来呢?",
+      "next_msg": "你的业务会告诉你它需要什么。",
+      "start_btn": "让我们开始吧！"
+  },
+  "home": {
+      "title": "Cashflow",
+      "todo_txt": "待办事项",
+      "payment_card_title": "待提交",
+      "time_now": "刚刚",
+      "time_min_ago": "{{min}}分钟以前",
+      "time_mins_ago": "{{min}}分钟以前",
+      "time_hour_ago": "{{hour}}小时以前",
+      "time_hours_ago": "{{hour}}小时以前",
+      "time_day_ago": "{{day}}天以前",
+      "time_days_ago": "{{day}}天以前",
+      "cards_title": "智慧卡片",
+      "income_title": "月收入一览",
+      "benchmark_title": "月支出参照",
+      "calendar_title": "11.11表现",
+      "create_payment_title": "创建款项",
+      "payment_incoming": "收入",
+      "payment_outcoming": "支出",
+      "payment_cancel_btn": "取消"
+  },
+  "moneydetail": {
+    "list": {
+        "money_in": "收入",
+        "money_out": "支出"
+    },
+    "category": {
+        "IN-ISS": "门店销售",
+        "IN-OS": "线上销售",
+        "IN-ASS": "售后",
+        "IN-OTH": "其他",
+        "OUT-COGS": "物料成本",
+        "OUT-PR": "工资",
+        "OUT-RENT": "租金",
+        "OUT-TE": "团队建设",
+        "OUT-OTH": "其他"
+    }
+  },
+  "menu": {
+      "home": "主页",
+      "account": "帐户",
+      "bps": "合作伙伴",
+      "payments": "款项",
+      "products": "产品",
+      "reports": "报表",
+      "settings": "设置",
+      "logout": "登出",
+      "todo": "TODO!",
+      "version": "版本",
+      "expense": "费用",
+      "financial":"财务管理",
+      "account_balance":"科目余额",
+      "journal_entry":"录凭证",
+      "fee":"费用",
+      "cash_bills":"现金日记账",
+      "final_bill":"期末结账",
+      "balance_sheet":"资产负债表",
+      "income_report":"利润表",
+      "income" :"收款",
+      "payment": "付款",
+      "bank_reconciliation" : "银行对账",
+      "bank_account_manage" : "银行账户管理",
+      "stock_manage":"库存管理",
+      "stock_statistics":"库存统计",
+      "stock_taking": "库存盘点",
+      "funds_manage":"资金管理",
+      "key_data":"核心数据",
+      "company_key_data":"企业核心数据",
+      "gross_margin_money":"毛利资金",
+      "financial_indicators":"财务指标",
+      "profit_analysis":"毛利分析",
+      "balance_of_payments":"出纳收支",
+      "stock_info":"库存信息",
+      "tax_indicator":"税务指标",
+      "data_analysis":"数据分析",
+      "gross_profit_return_report":"毛利还原报表",
+      "gross_profit_return":"毛利还原"
+  },
+  "bp": {
+      "list_customer_tab": "客户",
+      "list_vendors_tab": "供应商"
+  },
+  "revenueDetail": {
+      "title": "收入"
+  },
+  "payment": {
+      "list": {
+          "filter": {
+              "all": "全部",
+              "incoming": "收入",
+              "outgoing": "支出"
+            },
+            "create_title": "创建款项",
+            "cancel_btn": "取消",
+            "header_in_txt": "收入",
+            "header_out_txt": "支出"
+        },
+        "detail": {
+            "in_title": "收入款项",
+            "out_title": "支出款项",
+            "from_txt": "来自",
+            "to_txt": "纳入",
+            "date_txt": "日期",
+            "amount_txt": "金额",
+            "reference_txt": "参考说明",
+            "attachment_txt": "附件",
+            "category": "类目",
+            "product_title": "产品",
+            "product_column": "产品",
+            "amount_column": "金额",
+            "expense_type_title": "支出类型",
+            "save_btn": "保存",
+            "delete_btn": "删除",
+            "delete_success_msg": "删除成功",
+            "delete_error_msg": "错误:{{msg}}",
+            "save_success_msg": "保存成功",
+            "save_error_msg": "错误:{{msg}}",
+            "delete_confirm_title": "删除确认",
+            "delete_confirm_text": "真的确认删除吗？",
+            "delete_confirm_negative": "撤销",
+            "delete_confirm_positive": "删除"
+        },
+        "status": {
+            "draft": "待提交",
+            "posted": "已提交"
+        }
+  },
+  "journalEntry": { 
+    "list": {
+        "JE_title": "凭证",
+        "editJE_title": "录凭证",
+        "viewJE_title": "查看凭证"
+    }
+    ,
+    "detail": {
+        "line_title": "凭证分录",
+        "amount_label": "金额",
+        "add_line_btn": "新增一条",
+        "post_btn": "提交",
+        "credit_total": "贷方合计",
+        "debit_total": "借方合计",
+        "amount_credit": "贷",
+        "amount_debit": "借",
+        "methods":"方向",
+        "taxRate_label": "税率",
+        "taxAmount_label": "税金",
+        "journalEntry_account_category": "科目",
+        "description_label": "摘要",
+        "delete_nav_btn": "删除",
+        "delete_btn": "删除",
+        "delete_success_msg": "删除成功",
+        "save_btn":"保存",
+        "memo_label": "描述",
+        "dueDate_label": "到期日",
+        "userName_label": "支出人",
+        "post_memonull_msg": "描述不可为空!",
+        "post_0_msg": "借方合计和贷方合计不可以为0!",
+        "post_imbalence_msg": "借贷不平衡!",
+        "amount_0_msg":"金额不可以为0！"
+      }
+  },
+  "expense": {
+    "detail": {
+      "title": "费用清单",
+      "amount_label": "总金额",
+      "taxRate_label": "税率",
+      "taxAmount_label": "税金",
+      "expense_category_label": "费用类别",
+      "spent_on_label": "支出时间",
+      "spent_by_label": "支出人",
+      "description_label": "描述",
+      "import_nav_btn": "导入",
+      "delete_btn": "删除",
+      "delete_success_msg": "删除成功"
+    }
+},
+  "report": {
+        "cash_trend": {
+            "title": "现金趋势",
+            "monthLabel": "月",
+            "legend": {
+                "received": "收入",
+                "paid": "支出",
+                "balance": "余额"
+            }
+        },
+        "volume": {
+            "title": "业务量",
+            "monthLabel": "月",
+            "legend": {
+                "number": "收入账款的数目",
+                "money": "收入总额"
+            },
+            "filter": {
+                "customer": "按客户分类",
+                "product": "按产品分类"
+            },
+            "comparison_title": "对比"
+        },
+        "top5Cus": {
+            "title": "前5位客户"
+        },
+        "top5Exp": {
+            "title": "前5项开支"
+        },
+        "top5Seller": {
+            "title": "前5个热销品"
+        },
+        "payments_txt": "支付",
+        "expense_trend": {
+            "title": "费用趋势"
+        },
+        "revenue_gross": {
+            "title": "收入和利润",
+            "legend": {
+                "revenue": "收入",
+                "gross": "利润"
+            }
+        }
+  },
+  "core":{
+      "profit_analysis":{
+         "cost":"成本",
+         "expense":"费用",
+         "grossprofit":"毛利",
+         "revenue":"收入",
+         "profit_trend":"利润趋势",
+         "intelligent insight":"智能洞察"
+      }
+  },
+    "grossprofit":{
+      "profit_summary": "毛利汇总",
+      "balance": {
+        "title": "资金余额",
+        "cash_amount": "库存现金",
+        "card_amount": "银行存款"
+      }
+  },
+  "month": {
+      "jan": {
+          "full": "1月",
+          "short": "1月"
+      },
+      "feb": {
+          "full": "2月",
+          "short": "2月"
+      },
+      "mar": {
+          "full": "3月",
+          "short": "3月"
+      },
+      "apr": {
+          "full": "4月",
+          "short": "4月"
+      },
+      "may": {
+          "full": "5月",
+          "short": "5月"
+      },
+      "jun": {
+          "full": "6月",
+          "short": "6月"
+      },
+      "jul": {
+          "full": "7月",
+          "short": "7月"
+      },
+      "aug": {
+          "full": "8月",
+          "short": "8月"
+      },
+      "sep": {
+          "full": "9月",
+          "short": "9月"
+      },
+      "oct": {
+          "full": "10月",
+          "short": "10月"
+      },
+      "nov": {
+          "full": "11月",
+          "short": "11月"
+      },
+      "dec": {
+          "full": "12月",
+          "short": "12月"
+      }
+  },
+  "timePeriod": {
+      "this_month": "当月",
+      "past_3_month": "过去3个月",
+      "past_6_month": "过去6个月",
+      "past_12_month": "过去12个月",
+      "year": "{{year}}年",
+      "till_now": "迄今为止"
+  },
+  "confirm_btn": "确认",
+  "cancel_btn": "取消",
+  "ok_btn": "好的",
+  "setting": {
+      "language_txt": "语言",
+      "english": "English",
+      "japanese": "日本語",
+      "chinese": "中文",
+      "currency_txt": "货币"
+  },
+  "update": {
+    "title": "新版本更新",
+    "msg": "现在有更新的版本可供下载。",
+    "download_btn": "下载"
+  },
+  "form": {
+    "attachment_title": "附件",
+    "attachment_add_btn": "添加"
+},
+  "take_photo_btn": "拍照",
+  "choose_from_library_btn": "从相册选取",
+  "account": { 
+        "list": {
+            "title": "帐户",
+            "bank":"银行",
+            "alipay": "支付宝",
+            "cashinstore": "现金",
+            "wechatpay": "微信支付"
+        },
+        "detail": {
+            "amount_label": "总金额",
+            "account_type":"账户类型",
+            "account_name":"账号名",
+            "account_number":"账号",
+            "bank":"银行",
+            "currency":"货币",
+            "post_btn":"保存",
+            "post_success_msg":"保存成功",
+            "delete_error":"删除失败",
+            "delete_error_exist_text":"已有交易账户无法删除",
+            "store_address":"地址",
+            "alipay_account":"支付宝账号",
+            "wechat_account":"微信账号",
+            "save_error":"账号类型不能为空",
+            "title":"创建账户"
+
+          }
+    }
+}

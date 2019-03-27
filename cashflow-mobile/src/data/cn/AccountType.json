@@ -1,0 +1,17 @@
+[{
+    "id": "1",
+    "code": "cash",
+    "name": "现金"
+}, {
+    "id": "2",
+    "code": "bank",
+    "name": "银行"
+}, {
+    "id": "3",
+    "code": "alipay",
+    "name": "支付宝"
+}, {
+    "id": "4",
+    "code": "wepay",
+    "name": "微信支付"
+}]

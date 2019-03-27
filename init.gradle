@@ -1,0 +1,56 @@
+allprojects {
+    repositories {
+        def MAVEN_REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public/'
+        def MAVEN_JCENTER_URL = 'https://maven.aliyun.com/repository/jcenter'
+        all { ArtifactRepository repo ->
+            if (repo instanceof MavenArtifactRepository) {
+                def url = repo.url.toString()
+                if (url.startsWith('https://repo.maven.apache.org/maven2') || url.startsWith('http://repo.maven.apache.org/maven2')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $MAVEN_REPOSITORY_URL."
+                    remove repo
+                }
+                if (url.startsWith('https://jcenter.bintray.com/') || url.startsWith('http://jcenter.bintray.com/')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $MAVEN_JCENTER_URL."
+                    remove repo
+                }
+                if (url.startsWith('https://dl.google.com/') || url.startsWith('http://dl.google.com/')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $MAVEN_JCENTER_URL."
+                    remove repo
+                }
+            }
+        }
+        maven {
+            url MAVEN_REPOSITORY_URL
+            url MAVEN_JCENTER_URL
+        }
+    }
+
+    buildscript {
+        repositories {
+            def MAVEN_REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public/'
+            def MAVEN_JCENTER_URL = 'https://maven.aliyun.com/repository/jcenter'
+            def MAVEN_GOOGLE_URL = 'https://maven.aliyun.com/repository/google'
+            all { ArtifactRepository repo ->
+                if (repo instanceof MavenArtifactRepository) {
+                    def url = repo.url.toString()
+                    if (url.startsWith('https://repo.maven.apache.org/maven2') || url.startsWith('http://repo.maven.apache.org/maven2')) {
+                        project.logger.lifecycle "Repository ${repo.url} replaced by $MAVEN_REPOSITORY_URL."
+                        remove repo
+                    }
+                    if (url.startsWith('https://jcenter.bintray.com/') || url.startsWith('http://jcenter.bintray.com/')) {
+                        project.logger.lifecycle "Repository ${repo.url} replaced by $MAVEN_JCENTER_URL."
+                        remove repo
+                    }
+                    if (url.startsWith('https://dl.google.com/') || url.startsWith('http://dl.google.com/')) {
+                        project.logger.lifecycle "Repository ${repo.url} replaced by $MAVEN_JCENTER_URL."
+                        remove repo
+                    }
+                }
+            }
+            maven {
+                url MAVEN_REPOSITORY_URL
+                url MAVEN_JCENTER_URL
+            }
+        }
+    }
+}
